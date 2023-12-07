@@ -7,7 +7,7 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
 
-  const apiKey = 'ff3b3aba3af42f3a338094469c8cd600'; //this is just a demo, for multiple keys,please store on .env file 
+  const apiKey = process.env.weatherapi_key; //store keys separately on .env and read it from there 
   console.log('open weather API',apiKey)
 
   const fetchWeather = async () => {
