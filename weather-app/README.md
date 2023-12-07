@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+
+# Weather App
+
+A responsive React application that provides real-time weather information for cities using the OpenWeatherMap API.
+
+
+## Features
+
+- **Search by City:** Enter the name of a city to get the current weather information.
+- **Detailed Information:** View details such as city name, country, weather description, temperature, and humidity.
+- **Error Handling:** Receive clear messages for invalid city names.
+- **Responsive Design:** Accessible and usable on various devices.
+
+A simple React application that fetches and displays current weather information using the OpenWeatherMap API.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
