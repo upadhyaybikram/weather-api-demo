@@ -6,12 +6,14 @@ function App() {
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-  const apiKey = process.env.weatherapi_key; //store keys separately on .env and read it from there 
+  const apiKey = process.env.REACT_APP_WEATHER_API_KEY; //store keys separately on .env and read it from there 
   console.log('open weather API',apiKey)
 
   const fetchWeather = async () => {
     try {
+      setLoading(true);
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
       setWeather(response.data);
       setError(null);

@@ -1,5 +1,5 @@
 
-# Weather App
+# Get started with Weather App
 
 A responsive React application that provides real-time weather information for cities using the OpenWeatherMap API.
 
